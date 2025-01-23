@@ -1,0 +1,223 @@
+/* Classi per le dimensioni delle figure */
+.figure-small {
+    width: 30%;
+    margin: 2em auto;
+}
+
+.figure-medium {
+    width: 50%;
+    margin: 2em auto;
+}
+
+.figure-large {
+    width: 80%;
+    margin: 2em auto;
+}
+
+.figure-full {
+    width: 100%;
+    margin: 2em auto;
+}
+
+/* Stile per le immagini dentro le figure */
+.figure-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Stile per le didascalie */
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 1em;
+    font-size: 0.9em;
+}
+
+/* Stile per le proposizioni matematiche */
+.prop {
+    background-color: #f8f9fa;
+    border-left: 4px solid #4a9eff;
+    border-radius: 4px;
+    padding: 0;
+    margin: 1.5em 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Stile per gli algoritmi */
+.algorithm {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.algorithm-line {
+    display: block;
+    margin: 0.75rem 0;
+    padding-left: 1.5rem;
+}
+
+.algorithm u:first-child {
+    display: block;
+    color: #0366d6;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+/* Forza ogni istruzione su una nuova linea */
+.algorithm p,
+.algorithm .math,
+.algorithm > span {
+    display: block !important;
+    margin: 0.5rem 0 !important;
+    padding-left: 1.5rem;
+}
+
+/* Stile per le funzioni e parole chiave */
+.algorithm .keyword {
+    color: #d73a49;  /* rosso per le parole chiave */
+}
+
+.algorithm .function {
+    color: #6f42c1;  /* viola per le funzioni */
+}
+
+.algorithm .comment {
+    color: #6a737d;  /* grigio per i commenti */
+}
+
+/* Stile per gli operatori e simboli */
+.algorithm .operator {
+    color: #005cc5;  /* blu per gli operatori */
+}
+
+/* Stile per le variabili */
+.algorithm .variable {
+    color: #24292e;  /* nero per le variabili */
+}
+
+/* Stile per i titoli */
+.prop > em:first-child {
+    display: block;
+    font-weight: 600;
+    padding: 1em 1.5em !important;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Stile per il contenuto */
+.prop > *:not(em:first-child){
+    padding: 2em 2.5em !important;
+    margin: 0;
+}
+
+/* Stile per i paragrafi dentro i box */
+.prop p, 
+.algorithm p {
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+/* Stile per le espressioni matematiche */
+.prop .math {
+    margin: 1.2em 0;
+    padding: 0 1.5em;
+}
+
+/* Stile per i contenitori delle tabelle */
+div[id^="tab:"], 
+div[id^="table:"] {
+    background-color: #ffffff;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2em 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+/* Stile per le tabelle */
+div[id^="tab:"] table,
+div[id^="table:"] table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Stile per l'header della tabella */
+div[id^="tab:"] th,
+div[id^="table:"] th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e9ecef;
+    padding: 1em;
+    text-align: center;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+/* Stile per le celle */
+div[id^="tab:"] td,
+div[id^="table:"] td {
+    padding: 0.8em 1em;
+    border-bottom: 1px solid #e9ecef;
+    text-align: center;
+}
+
+/* Allineamento specifico per celle */
+div[id^="tab:"] td[align="left"],
+div[id^="table:"] td[align="left"] {
+    text-align: left;
+}
+
+div[id^="tab:"] td[align="right"],
+div[id^="table:"] td[align="right"] {
+    text-align: right;
+}
+
+/* Stile per la didascalia della tabella */
+div[id^="tab:"] > p:last-child,
+div[id^="table:"] > p:last-child {
+    margin: 1em;
+    font-style: italic;
+    color: #4a5568;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+/* Stile zebrato per le righe */
+div[id^="tab:"] tr:nth-child(even),
+div[id^="table:"] tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Stile per la navigazione tra pagine */
+.page-nav {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 1px solid #e9ecef;
+    text-align: right;
+}
+
+.page-nav .next-page {
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: #4a9eff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.page-nav .next-page:hover {
+    color: #2c5282;
+} 
+
+table td:empty {
+    border: none;
+}

@@ -1,0 +1,13 @@
+<div class="sidebar">
+  <h2>Pages</h2>
+  <ul>
+    {% assign content_pages = site.pages | where_exp: "page", "page.layout == 'page'" | where_exp: "page", "page.hidden != true" %}
+    {% for page in content_pages %}
+      {% if page.title %}
+        <li {% if page.url == current_page.url %}class="active"{% endif %}>
+          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div> 

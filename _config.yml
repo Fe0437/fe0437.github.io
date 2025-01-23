@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 👋 Federico Forti (fe0437)
+title: 🌵 Federico Forti (fe0437)
 email: federico.forti.1990@gmail.com.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is a personal blog where I'm going to write long articles about my projects when I need more space and resources than a simple tweet.
@@ -54,3 +54,6 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+include:
+  - _pages
